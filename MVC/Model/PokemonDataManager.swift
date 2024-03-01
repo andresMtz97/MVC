@@ -19,7 +19,7 @@ class PokemonDataManager {
         ["image":"5", "name":"Jigglypuf", "hability":"Compiescolta"],
         ["image":"6", "name":"Charmander", "hability":"Poder solar"],
         ["image":"7", "name":"Meowth", "hability":"Nerviosismo"],
-        ["image":"8", "name":"Alacazam", "hability":"Muro màgico"],
+        ["image":"8", "name":"Alacazam", "hability":"Muro mágico"],
         ["image":"9", "name":"Pidgey", "hability":"Sacapecho"],
         ["image":"10", "name":"Raichu", "hability":"Pararrayos"],
         ["image":"11", "name":"Rattata", "hability":"Entusiasmo"],

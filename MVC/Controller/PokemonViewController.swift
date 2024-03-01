@@ -15,15 +15,15 @@ class PokemonViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pokemonTableView.backgroundColor = UIColor(named: "pale-purple")
         // Do any additional setup after loading the view.
         pokemonDataManager.fetch()
-        print(pokemonDataManager.countPokemons())
-        var i = 0
-        while i < pokemonDataManager.countPokemons() {
-            print(pokemonDataManager.getPokemon(at: i))
-            i += 1
-        }
+//        print(pokemonDataManager.countPokemons())
+//        var i = 0
+//        while i < pokemonDataManager.countPokemons() {
+//            print(pokemonDataManager.getPokemon(at: i))
+//            i += 1
+//        }
     }
     
 
@@ -58,7 +58,9 @@ extension PokemonViewController: UITableViewDelegate, UITableViewDataSource {
 //    }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return UIImageView(image: UIImage(named: "Pokemon"))
+        let headerView = UIImageView(image: UIImage(named: "Pokemon"))
+        headerView.backgroundColor = UIColor(named: "pale-purple")
+        return headerView
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
